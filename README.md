@@ -16,3 +16,5 @@
   Flask run
 6. If necessary, use the following line to get out of the virtual environment. <br/>
   deactivate <br/>
+
+### Once server is running in virtual environment, open turbineViewer.html in browser. ###
