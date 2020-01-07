@@ -143,9 +143,12 @@
         //console.log(JSON.stringify(turbine))
         return turbine
     }
+
+    host = window.location.origin
+
     function getAllAjax(){
         $.ajax({
-            "url": "http://127.0.0.1:5000/turbines",
+            "url": host+"/turbines",
             "method":"GET",
             "data":"",
             "dataType": "JSON",
@@ -163,7 +166,7 @@
     function createTurbineAjax(turbine){
         //console.log(JSON.stringify(turbine));
         $.ajax({
-            "url": "http://127.0.0.1:5000/turbines",
+            "url": host+"/turbines",
             "method":"POST",
             "data":JSON.stringify(turbine),
             "dataType": "JSON",
@@ -182,7 +185,7 @@
     function updateTurbineAjax(turbine){
         //console.log(JSON.stringify(turbine));
         $.ajax({
-            "url": "http://127.0.0.1:5000/turbines/"+encodeURI(turbine.ID),
+            "url": host+"/turbines/"+encodeURI(turbine.ID),
             "method":"PUT",
             "data":JSON.stringify(turbine),
             "dataType": "JSON",
@@ -197,7 +200,7 @@
     }
     function deleteTurbineAjax(ID){
         $.ajax({
-            "url": "http://127.0.0.1:5000/turbines/"+encodeURI(ID),
+            "url": host+"/turbines/"+encodeURI(ID),
             "method":"DELETE",
             "data":"",
             "dataType": "JSON",
