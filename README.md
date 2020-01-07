@@ -1,7 +1,7 @@
 # Data-Representation-Project
 
 ### To run virtual environment follow the steps below: ###
-1.Navigate to the project folder on the command line and run the following line.
+1. Navigate to the project folder on the command line and run the following line.
 .\venv\Scripts\activate.bat
 2. Run the following line to install all necessary packages.
 pip install Requirements.txt
