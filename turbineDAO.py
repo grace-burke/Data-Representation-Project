@@ -1,15 +1,16 @@
 import mysql.connector
+import config as cfg
 
 class TurbineDAO:
     db=""
 
     def __init__(self): 
         self.db = mysql.connector.connect(
-        host="localhost",
-        port="3308",
-        user="root",
-        password="",
-        database="DataRep"
+        host=cfg.mysql['host'],
+        port=cfg.mysql['port'],
+        user=cfg.mysql['username'],
+        password=cfg.mysql['password'],
+        database=cfg.mysql['database']
         )
     
             
