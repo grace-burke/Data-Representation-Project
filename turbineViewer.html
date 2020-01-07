@@ -102,7 +102,7 @@
         var cell5 = rowElement.insertCell(4);
         cell5.innerHTML = '<button onclick="showUpdate(this)">Update</button>'
         var cell6 = rowElement.insertCell(5);
-        cell6.innerHTML = '<button onclick=doDelete(this)>delete</button>'
+        cell6.innerHTML = '<button onclick=doDelete(this)>Delete</button>'
     }
     function clearForm(){
         var form = document.getElementById('createUpdateForm')
@@ -150,8 +150,7 @@
             "data":"",
             "dataType": "JSON",
             "success":function(result){
-                //console.log(results);
-                for (turbine in result){
+                for (turbine of result){
                     addTurbineToTable(turbine);
                 }
             },
@@ -188,8 +187,7 @@
             "dataType": "JSON",
             contentType: "application/json; charset=utf-8",
             "success":function(result){
-               // console.log(result);
-                  
+                //console.log(result);
             },
             "error":function(xhr,status,error){
                 console.log("error: "+status+" msg:"+error);
@@ -204,8 +202,7 @@
             "dataType": "JSON",
             contentType: "application/json; charset=utf-8",
             "success":function(result){
-                //console.log(result);
-                  
+                //console.log(result);                  
             },
             "error":function(xhr,status,error){
                 console.log("error: "+status+" msg:"+error);

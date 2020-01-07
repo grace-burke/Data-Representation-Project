@@ -1,7 +1,9 @@
 from flask import Flask, jsonify, request, abort
+from flask_cors import CORS, cross_origin
 from turbineDAO import turbineDAO
 
 app = Flask(__name__, static_url_path='', static_folder='.')
+CORS(app)
 
 #app = Flask(__name__)
 
