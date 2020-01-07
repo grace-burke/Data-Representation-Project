@@ -1,0 +1,6 @@
+CREATE DATABASE DataRep;
+Use DataRep
+CREATE TABLE 'WindTurbine` ( `ID` INT NOT NULL AUTO_INCREMENT , `Model` VARCHAR(255) NOT NULL , `Manufacturer` VARCHAR(255) NOT NULL , `Rating` FLOAT NOT NULL , PRIMARY KEY (`ID`));
+INSERT INTO 'WindTurbine` ('Model,'Manufacturer','Rating') VALUES ('E-70','Enercon',2.0);
+INSERT INTO 'WindTurbine` ('Model,'Manufacturer','Rating') VALUES ('2.3M130','Senvion',2.3);
+INSERT INTO 'WindTurbine` ('Model,'Manufacturer','Rating') VALUES ('V120-2.2 MW','Vestas',2.2);
